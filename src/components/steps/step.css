@@ -1,0 +1,43 @@
+/* #C77D58 */
+
+.step__container {
+  min-height: 70vh;
+}
+
+.step__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.step__wrapper h2 {
+  color: #333;
+  margin-block: 64px;
+}
+
+.step__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.step_icon {
+  color: #c77d58;
+  font-size: 2.3rem;
+  margin-bottom: 24px;
+}
+
+.step__item {
+  text-align: center;
+}
+
+.step__item h3 {
+  color: #333;
+}
+
+.step__item p {
+  color: rgb(97, 96, 96);
+  max-width: 400px;
+  line-height: 2rem;
+}

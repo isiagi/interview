@@ -1,0 +1,48 @@
+.service__container {
+    text-align: center;
+}
+
+.service__container h1 {
+    margin-block: 64px;
+    color: #333;
+    font-weight: 400;
+}
+
+.service__wrapper {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.service__card {
+    text-align: center;
+}
+
+.service__card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 9px 4px #888888;
+}
+
+.service__card img {
+    width: 250px;
+    /* max-width: 100%; */
+}
+
+.service__card h3 {
+    color: #333;
+}
+
+.service__card p {
+    color: rgb(97, 96, 96);
+    line-height: 2rem;
+    max-width: 300px;
+}
+
+.service__card button {
+    padding:8px 16px;
+    outline: none;
+    border: none;
+    background-color: #C77D58;
+    color: #fff;
+    margin-block: 16px;
+}

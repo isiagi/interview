@@ -1,0 +1,13 @@
+.about__wrapper {
+    text-align: center;
+}
+
+.about__wrapper h2 {
+    margin-block: 64px;
+    color: #333;
+}
+
+.bout__img img{
+    border-radius: 80px;
+    max-width: 100%;
+}

@@ -1,0 +1,21 @@
+.nav__container {
+    min-height: 10vh;
+    position: fixed;
+    width: 100%;
+}
+
+.nav__wrapper {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav__link ul li {
+    width: 100px;
+}

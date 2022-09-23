@@ -1,0 +1,9 @@
+.contact__container {
+  width: 100%;
+}
+
+.contact__wrappr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+  gap: 1rem;
+}
