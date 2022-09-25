@@ -6,6 +6,7 @@ import SignUp from "./sign/SignUp";
 import Login from "./log/Login"
 import Reset from "./reset/Reset"
 import ResetPassword from "./reset/ResetPassword"
+import Enter from "./enter/Enter";
 
 const index = () => {
   return (
@@ -16,6 +17,7 @@ const index = () => {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/reset" element={<Reset />} />
+        <Route path="/enter" element={<Enter />} />
         <Route path="/passwordreset/:resetToken" element={<ResetPassword />} />
       </Routes>
     </Router>

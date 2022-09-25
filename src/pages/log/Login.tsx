@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../sign/sign.css";
 
@@ -10,6 +10,8 @@ interface User {
 }
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const [value, setValue] = useState<User>({
     username: "",
     email: "",
@@ -24,7 +26,7 @@ const SignUp = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    fetch("http://localhost:5000/api/v1/login", {
+    fetch("https://sleepy-basin-09946.herokuapp.com/api/v1/login", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       credentials: "include",
@@ -40,7 +42,7 @@ const SignUp = () => {
         return "Wrong Entries";
       })
       .then((docs) => {
-        console.log(docs);
+        navigate('/enter');
       })
       .catch((err) => {
         console.log(err);

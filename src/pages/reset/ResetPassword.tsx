@@ -26,7 +26,7 @@ const SignUp = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    fetch(`http://localhost:5000/api/v1/passwordreset/${resetToken}`, {
+    fetch(`https://sleepy-basin-09946.herokuapp.com/api/v1/passwordreset/${resetToken}`, {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       credentials: "include",

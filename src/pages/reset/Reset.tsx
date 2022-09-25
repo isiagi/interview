@@ -10,6 +10,7 @@ const SignUp = () => {
   const [value, setValue] = useState<User>({
     email: "",
   });
+  const [yes, setYes] = useState(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.preventDefault();
@@ -19,7 +20,7 @@ const SignUp = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    fetch("http://localhost:5000/api/v1/forgotPassword", {
+    fetch("https://sleepy-basin-09946.herokuapp.com/api/v1/forgotPassword", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       credentials: "include",
@@ -35,6 +36,7 @@ const SignUp = () => {
       })
       .then((docs) => {
         console.log(docs);
+        setYes(true)
       })
       .catch((err) => {
         console.log(err);
@@ -43,8 +45,9 @@ const SignUp = () => {
   return (
     <div className="signup__container">
       <div className="signup__wrapper">
+        <h3 className={yes ? "show": "hide"}>Please Check Your Email</h3>
         <form onSubmit={handleSubmit}>
-        <div className="contact__input">
+          <div className="contact__input">
             <input
               type="email"
               name="email"
