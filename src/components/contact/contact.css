@@ -2,8 +2,19 @@
   width: 100%;
 }
 
+.contact__container h2 {
+  text-align: center;
+  color: #333;
+  margin-block: 64px;
+}
+
 .contact__wrappr {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
   gap: 1rem;
+}
+
+.contact__flex {
+  display: flex;
+  align-items: center;
 }

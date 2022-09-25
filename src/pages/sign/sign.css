@@ -1,0 +1,50 @@
+.signup__container {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.signup__wrapper {
+  width: 40%;
+  max-width: 100%;
+}
+
+.contact__input {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.contact__input .input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: #333;
+  font-size: 17px;
+}
+
+.contact__input .input__label {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  color: #C77D58;
+  pointer-events: none;
+}
+
+.contact__input .input:focus ~ .input__label,
+.contact__input .input:valid ~ .input__label {
+  transform: translateY(-20px);
+}
+
+.footer__submit {
+  width: 50%;
+  padding: 16px 24px;
+  outline: none;
+  border: none;
+  background-color: #C77D58;
+  color: #fff;
+  font-size: 15px;
+}

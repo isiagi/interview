@@ -12,9 +12,16 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .hero__wrapper h3 {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     color: #fff;
+    color: #c77d58;
+}
+
+.hero__h3 {
+  max-width: 300px;
+  color: #c77d58;
 }

@@ -11,6 +11,7 @@ import MapComponent from "../map/Map";
 const Contact = () => {
   return (
     <div className="contact__container">
+      <h2>Contact Us</h2>
       <div className="contact__wrappr">
         <div className="contact__map">
           <MapComponent />
@@ -18,15 +19,15 @@ const Contact = () => {
 
         <div className="contact__info">
           <div className="contact__flex">
-            <AiOutlinePhone />
-            <p>+256786535416 / +256703535416</p>
+            <AiOutlinePhone className="step_icon"/>
+            <p>+256777963365 / +256777963365</p>
           </div>
           <div className="contact__flex">
-            <GoLocation />
-            <p>Naliya Kampala</p>
+            <GoLocation className="step_icon"/>
+            <p>Kampala, Uganda</p>
           </div>
           <div className="contact__flex">
-            <AiOutlineCalendar />
+            <AiOutlineCalendar className="step_icon"/>
             <p>
               <span>Mon - Fri</span> 8:00am - 5:00pm
             </p>
