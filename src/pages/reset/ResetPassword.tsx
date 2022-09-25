@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import "../sign/sign.css";
 
@@ -12,6 +12,8 @@ interface Use {
   }
 
 const SignUp = () => {
+  const navigate = useNavigate();
+
   const [value, setValue] = useState<User>({
     password: "",
   });
@@ -41,7 +43,7 @@ const SignUp = () => {
         return docs;
       })
       .then((docs) => {
-        console.log(docs);
+        navigate('/login')
       })
       .catch((err) => {
         console.log(err);
