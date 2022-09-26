@@ -3,6 +3,7 @@
   align-items: center;
   min-height: 100vh;
   justify-content: center;
+  z-index: -100;
 }
 
 .signup__wrapper {
@@ -56,4 +57,10 @@
 
 .hide {
   display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .signup__wrapper {
+    width: 80%;
+  }
 }
