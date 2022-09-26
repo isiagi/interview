@@ -4,6 +4,7 @@
   min-height: 100vh;
   justify-content: center;
   z-index: -100;
+  background-color:#fbfdfd;
 }
 
 .signup__wrapper {

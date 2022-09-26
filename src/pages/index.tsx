@@ -7,6 +7,7 @@ import Login from "./log/Login"
 import Reset from "./reset/Reset"
 import ResetPassword from "./reset/ResetPassword"
 import Enter from "./enter/Enter";
+import Footer from "../components/footer/Footer"
 
 const index = () => {
   return (
@@ -20,6 +21,7 @@ const index = () => {
         <Route path="/enter" element={<Enter />} />
         <Route path="/passwordreset/:resetToken" element={<ResetPassword />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

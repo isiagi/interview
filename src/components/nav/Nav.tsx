@@ -20,15 +20,15 @@ const Nav = () => {
     <div className={offSet > 40 ? "nav__container1" : "nav__container"}>
       <div className="nav__wrapper">
         <div className="nav__logo">
-          <h1>LOGO</h1>
+          <h1>WITTY<span style={{color: '#333'}}>MOVE</span></h1>
         </div>
 
         <div className={`${"nav__link"} ${open ? "active" : ""}`}>
           <ul>
-            <li onClick={() => setOpen(false)}><Link to="/">Home</Link></li>
+            <li onClick={() => setOpen(false)}><Link to="/" className="link">Home</Link></li>
             <li>Services</li>
             <li>Contact</li>
-            <li onClick={() => setOpen(false)}><Link to="/login">Sign In</Link></li>
+            <li onClick={() => setOpen(false)}><Link to="/login" className="link">Sign In</Link></li>
           </ul>
         </div>
         <div className="nav__icons">

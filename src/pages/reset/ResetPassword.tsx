@@ -49,6 +49,11 @@ const SignUp = () => {
         console.log(err);
       });
   };
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div className="signup__container">
       <div className="signup__wrapper">
